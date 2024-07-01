@@ -1,0 +1,70 @@
+.app-container {
+    width: auto;
+    height: 100%;
+    background: #eee;
+
+    .app-drawer {
+        background: #6C51A4;
+        color: #fff;
+
+        .portfolio-card {
+            max-width: 280px;
+            border: none;
+
+            .portfolio-name {
+                display: inline;
+                padding: 20px 20px 0;
+                text-align: center;
+
+                .mat-mdc-card-title {
+                    font-weight: bolder;
+                    font-size: 21px;
+                    // font: 21px sans-serif;
+                    text-transform: uppercase;
+                }
+            }
+
+            img {
+                border-radius: 50% !important;
+                // max-width: 160px;
+                margin: 10% auto;
+            }
+
+            .portfolio-short {
+                font-family: cursive;
+            }
+
+            .portfolio-list {
+                padding: 2rem;
+
+                .mat-mdc-list-item {
+                    padding: 10px;
+                    font-size: 1.1em;
+
+                    .mat-icon {
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            .portfolio-action {
+                position: fixed;
+                bottom: 0;
+                margin: 0 1.7em;
+            }
+        }
+
+    }
+}
+
+
+
+// .example-card-footer {
+//     padding: 16px;
+// }
+
+
+// width: 50%;
+// height: 50%;
+// margin: auto;
+// border-radius: 50% !important;
