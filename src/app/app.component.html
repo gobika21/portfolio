@@ -10,28 +10,13 @@
           Hi, my name is {{data.name}} and I'm a {{data.designation}}. Welcome to my personal website!
         </p>
       </mat-card-content>
-      <mat-card-content class="portfolio-list">
-        <mat-list role="list">
-          <mat-list-item role="listitem">
-            <mat-icon matListItemIcon>person</mat-icon>
-            <div matListItemTitle>About Me</div>
-          </mat-list-item>
-          <mat-list-item role="listitem">
-            <mat-icon matListItemIcon>work</mat-icon>
-            <div matListItemTitle>Project</div>
-          </mat-list-item>
-          <mat-list-item role="listitem">
-            <mat-icon matListItemIcon>phone</mat-icon>
-            <div matListItemTitle>Contact</div>
-          </mat-list-item>
-        </mat-list>        
-      </mat-card-content>
       <mat-card-actions class="portfolio-action">
-        <button mat-button (click)="onLinkedInClick('https://www.linkedin.com/in/gobika-s-1818b97b/')">LinkedIn</button>
-        <button mat-button>Twitter</button>
-        <button mat-fab extended>
-          <mat-icon>public</mat-icon>
-          <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i>
+        <button mat-button>
+          <a href="../Gobika_Resume.pdf" target="_blank">View Resume</a>
+        </button>
+
+        <button mat-button>
+          <a href="https://www.linkedin.com/in/gobika-s-1818b97b" target="_blank">LinkedIn</a>
         </button>
       </mat-card-actions>
     </mat-card>
@@ -39,8 +24,16 @@
   </mat-drawer>
   <mat-drawer-content>
     <div class="main-container">
-
+      <h2 class="title">About Me</h2>
+      <p>{{data.aboutMe}}</p>
+      <h2 class="title">Skills</h2>
+      <mat-list role="list" class="skills">
+        <mat-list-item role="listitem">Languages: HTML, CSS, JavaScript</mat-list-item>
+        <mat-list-item role="listitem">Frameworks: Angular, React</mat-list-item>
+        <mat-list-item role="listitem">Tools & Technologies: Git, Webpack, Sass, TypeScript, npm</mat-list-item>
+        <mat-list-item role="listitem">Other: Responsive Design, Cross-Browser Compatibility, UI/UX Best
+          Practices</mat-list-item>
+      </mat-list>
     </div>
-    {{data.shortNote}}
   </mat-drawer-content>
 </mat-drawer-container>

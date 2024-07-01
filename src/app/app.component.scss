@@ -19,19 +19,18 @@
                 .mat-mdc-card-title {
                     font-weight: bolder;
                     font-size: 21px;
-                    // font: 21px sans-serif;
                     text-transform: uppercase;
                 }
             }
 
             img {
                 border-radius: 50% !important;
-                // max-width: 160px;
                 margin: 10% auto;
             }
 
             .portfolio-short {
                 font-family: cursive;
+                font-size: 18px;
             }
 
             .portfolio-list {
@@ -51,20 +50,30 @@
                 position: fixed;
                 bottom: 0;
                 margin: 0 1.7em;
+                button a {
+                    color: white;
+                }
             }
         }
 
     }
 }
 
+.main-container {
+    padding: 3em;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    text-align: justify;
+    color: gray;
+    background-image: url("../../public/minimalist.jpg");
+    background-size: 100%;
+    background-size: cover;
 
+    .title {
+        color: #6C51A4;
+    }
 
-// .example-card-footer {
-//     padding: 16px;
-// }
-
-
-// width: 50%;
-// height: 50%;
-// margin: auto;
-// border-radius: 50% !important;
+    .skills .mat-mdc-list-item {
+        padding: 0.5em;
+    }
+}
